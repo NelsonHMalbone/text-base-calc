@@ -1,9 +1,14 @@
-import sys
 # Daily Python Project
 # text base calculator
+
+import sys
+
+
 while True:
     # have user choose a operator
-    function_input = input("Enter Operator + - * / or 'exit' : ")
+    function_input = input("Enter Operator +, -, *, /, 'pow' or 'exit' : ")
+
+    # allows user to exit program
     if function_input == 'exit':
         sys.exit()
     else:
@@ -28,3 +33,7 @@ while True:
                     print(result_divison)
                 except ZeroDivisionError:
                     print("Error message: Divison by Zero: Can not divide by Zero")
+
+            case 'pow':
+                pow_input = user_number_input_1 ** user_number_input_2
+                print(pow_input)
